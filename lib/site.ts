@@ -143,4 +143,16 @@ export const siteConfig = {
       },
     ] satisfies SolutionArea[],
   },
+  footer: {
+    heading: "İletişim",
+    email: {
+      label: "E-posta",
+      address: "info@esrmimarlik.com",
+    },
+    instagram: {
+      label: "Instagram'da bizi takip edin",
+      href: "https://instagram.com/esrarchitectural",
+    },
+    copyright: "© {year} ESR Architectural Systems. Tüm hakları saklıdır.",
+  },
 } as const;
