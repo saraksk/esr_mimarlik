@@ -2,25 +2,54 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a2332;
+  --header-height: 5rem;
+
+  --color-navy-50: #f4f6f8;
+  --color-navy-100: #e8ecf0;
+  --color-navy-500: #5c6b7f;
+  --color-navy-700: #2f3d52;
+  --color-navy-800: #243041;
+  --color-navy-900: #1a2332;
+
+  --color-accent-600: #b8956a;
+  --color-accent-700: #a07f55;
+
+  --color-hero-bg: #071827;
+  --color-hero-text: #f4f6f8;
+  --color-hero-muted: #a8b4c4;
+  --color-accent-gold: #c9a45c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-source-sans);
+
+  --color-navy-50: var(--color-navy-50);
+  --color-navy-100: var(--color-navy-100);
+  --color-navy-500: var(--color-navy-500);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-900: var(--color-navy-900);
+
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-700: var(--color-accent-700);
+
+  --color-hero-bg: var(--color-hero-bg);
+  --color-hero-text: var(--color-hero-text);
+  --color-hero-muted: var(--color-hero-muted);
+  --color-accent-gold: var(--color-accent-gold);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-source-sans), system-ui, sans-serif;
+  overflow-x: hidden;
 }
