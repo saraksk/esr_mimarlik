@@ -151,7 +151,7 @@ export const siteConfig = {
     },
     instagram: {
       label: "Instagram'da bizi takip edin",
-      href: "https://instagram.com/esrarchitectural",
+      href: "https://instagram.com/esrmimarlik",
     },
     copyright: "© {year} ESR Architectural Systems. Tüm hakları saklıdır.",
   },
