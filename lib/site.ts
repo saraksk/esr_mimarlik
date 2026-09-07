@@ -41,7 +41,7 @@ export const siteConfig = {
   ] satisfies NavItem[],
   cta: {
     label: "Teklif Al",
-    href: "https://wa.me/905551819277",
+    href: "https://wa.me/905555555555",
   },
   metadata: {
     title: "ESR Architectural Systems",
