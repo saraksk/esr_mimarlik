@@ -19,6 +19,7 @@ export type SolutionArea = {
   title: string;
   description: string;
   icon: SolutionAreaIcon;
+  slug?: string;
   image: {
     src: string;
     alt: string;
@@ -73,6 +74,7 @@ export const siteConfig = {
         title: "ALÜMİNYUM SİSTEMLERİ",
         description: "Yüksek performanslı alüminyum çözümler",
         icon: "aluminum",
+        slug: "aluminyum",
         image: {
           src: "/images/solutions/aluminyum.jpg?v=2",
           alt: "Alüminyum pencere sistemleri — placeholder görsel",
@@ -91,6 +93,7 @@ export const siteConfig = {
         title: "CEPHE SİSTEMLERİ",
         description: "Modern ve estetik cephe sistemleri",
         icon: "facade",
+        slug: "cephe",
         image: {
           src: "/images/solutions/cephe.jpg?v=2",
           alt: "Cam cepheli gökdelen — placeholder görsel",
